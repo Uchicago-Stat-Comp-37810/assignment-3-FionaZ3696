@@ -41,8 +41,6 @@ print (not_equal(2,3))
 def muladd(a,b,c):
     return a*b+c
 ## 2 - Equations
-##### YOUR CODE HERE #####
-
 
 # Test Cases
 angle_test = sin(muladd(pi,1/4,0))+muladd(cos(muladd(pi,1/4,0)),1/2,0)
