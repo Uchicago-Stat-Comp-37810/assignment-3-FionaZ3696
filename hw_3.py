@@ -11,17 +11,18 @@ from math import *
 
 # Define is_divisible function here
 def is_divisible(m,n):
-    if m%n ==0:
+    if n==0:
+        return "Cannot divide by 0!"
+    elif m%n ==0:
         return True
     else:
         return False
-
 # Test cases for is_divisible
 ## Provided for you... uncomment when you're done defining your function
 
 print (is_divisible(10, 5))  # This should return True
 print (is_divisible(18, 7))  # This should return False
-print (is_divisible(42, 0))  # What should this return?
+print (is_divisible(42, 0))  # What should this return? set it to return Cannor divide by 0!
 
 # ********** Exercise 2 **********
 
@@ -47,7 +48,7 @@ angle_test = sin(muladd(pi,1/4,0))+muladd(cos(muladd(pi,1/4,0)),1/2,0)
 print ("sin(pi/4) + cos(pi/4)/2 is: %f" %angle_test)
 
 ceiling_test = ceil(muladd(276,1/19,0)) + muladd(2,log(12,7),0)
-print("sin(pi/4)+cos(pi/4)/2 is: %f" %ceiling_test)
+print("sin(pi/4) + cos(pi/4)/2 is: %f" %ceiling_test)
 
 # ********** Exercise 4 **********
 
@@ -55,10 +56,10 @@ print("sin(pi/4)+cos(pi/4)/2 is: %f" %ceiling_test)
 def rand_divis_3():
     a = random.randint(0,100)
     print (a)
-    if a %3==0:
+    if a % 3 == 0:
         return True
-    else: return False
+    else:
+        return False
 
 # Test Cases
-rand_divis_3(18,3)
-rand_divis_3(21,2)
+print(rand_divis_3())
